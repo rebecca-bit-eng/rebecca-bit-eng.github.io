@@ -7,16 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #1a73e8;
+            background-color: #009688;
             color: white;
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
         header h1 {
@@ -31,11 +31,26 @@
             padding: 0 20px;
         }
         h2 {
-            color: #1a73e8;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #1a73e8;
+            color: #009688;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #009688;
             display: inline-block;
             padding-bottom: 5px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #009688;
         }
         ul {
             list-style: none;
@@ -45,7 +60,7 @@
             margin-bottom: 8px;
         }
         a {
-            color: #1a73e8;
+            color: #009688;
             text-decoration: none;
         }
         a:hover {
@@ -102,33 +117,41 @@
 
 <section>
     <h2>Work Experience</h2>
-    <ul>
-        <li><strong>Dreamport Travel Agency (UAE) – Travel Consultant</strong> | Aug 2025 – Present
-            <ul>
-                <li>Provide personalized travel planning for clients worldwide</li>
-                <li>Coordinate bookings for flights, accommodations, and tours</li>
-                <li>Build and maintain client relationships</li>
-                <li>Develop and promote innovative travel packages</li>
-                <li>Stay informed on global travel trends and emerging destinations</li>
-            </ul>
-        </li>
-        <li><strong>KEMRI-CDC, Kisumu – Biostatistics Intern</strong> | May 2024 – Oct 2024
-            <ul>
-                <li>Data cleaning, management, and analysis using R and STATA</li>
-                <li>Provided statistical support for maternal health projects</li>
-                <li>Prepared summary reports and visualizations for decision-making</li>
-                <li>Learned research ethics, data confidentiality, and teamwork in a scientific environment</li>
-            </ul>
-        </li>
-    </ul>
+
+    <div class="card">
+        <h3>Dreamport Travel Agency (UAE) – Travel Consultant | Aug 2025 – Present</h3>
+        <ul>
+            <li>Provide personalized travel planning for clients worldwide</li>
+            <li>Coordinate bookings for flights, accommodations, and tours</li>
+            <li>Build and maintain client relationships</li>
+            <li>Develop and promote innovative travel packages</li>
+            <li>Stay informed on global travel trends and emerging destinations</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>KEMRI-CDC, Kisumu – Biostatistics Intern | May 2024 – Oct 2024</h3>
+        <ul>
+            <li>Data cleaning, management, and analysis using R and STATA</li>
+            <li>Provided statistical support for maternal health projects</li>
+            <li>Prepared summary reports and visualizations for decision-making</li>
+            <li>Learned research ethics, data confidentiality, and teamwork in a scientific environment</li>
+        </ul>
+    </div>
+
 </section>
 
 <section>
     <h2>Projects</h2>
-    <ul>
-        <li>Machine Learning for Early Detection of Foot-and-Mouth Disease in Kenya</li>
-        <li>Maternal Health Data Analysis on pregnancy outcomes (R & STATA)</li>
-    </ul>
+
+    <div class="card">
+        <h3>Machine Learning for Early Detection of Foot-and-Mouth Disease in Kenya</h3>
+    </div>
+
+    <div class="card">
+        <h3>Maternal Health Data Analysis on pregnancy outcomes (R & STATA)</h3>
+    </div>
+
 </section>
 
 <section>
@@ -145,3 +168,4 @@
 
 </body>
 </html>
+
